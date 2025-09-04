@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dozie Dominion - Cybersecurity Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        .section-bg {
+            background-color: #f8fafc;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 fade-in">
+    <!-- Header/Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">Dozie Dominion</h1>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#summary" class="hover:text-blue-600 transition">Summary</a></li>
+                <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
+                <li><a href="#projects" class="hover:text-blue-600 transition">Projects</a></li>
+                <li><a href="#experience" class="hover:text-blue-600 transition">Experience</a></li>
+                <li><a href="#education" class="hover:text-blue-600 transition">Education</a></li>
+                <li><a href="#additional" class="hover:text-blue-600 transition">Additional</a></li>
+                <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+            <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-100">
+            <ul class="px-4 py-2">
+                <li><a href="#summary" class="block py-1 hover:text-blue-600">Summary</a></li>
+                <li><a href="#skills" class="block py-1 hover:text-blue-600">Skills</a></li>
+                <li><a href="#projects" class="block py-1 hover:text-blue-600">Projects</a></li>
+                <li><a href="#experience" class="block py-1 hover:text-blue-600">Experience</a></li>
+                <li><a href="#education" class="block py-1 hover:text-blue-600">Education</a></li>
+                <li><a href="#additional" class="block py-1 hover:text-blue-600">Additional</a></li>
+                <li><a href="#contact" class="block py-1 hover:text-blue-600">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-8">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/328f41f2-f044-4587-a2bb-0bb597b0424d.png" alt="Professional headshot of a cybersecurity engineer with a confident expression, wearing a business shirt, in a modern office setting with subtle security icons like locks and networks in the background" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg" />
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Dozie Dominion Ikechukwu</h1>
+            <p class="text-xl md:text-2xl mb-6">Certified Cybersecurity Specialist</p>
+            <p class="text-lg max-w-2xl mx-auto">Passionate about safeguarding digital landscapes through innovative security solutions and proactive threat mitigation strategies.</p>
+        </div>
+    </section>
+
+    <!-- Professional Summary -->
+    <section id="summary" class="py-16 section-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-blue-600">Professional Summary</h2>
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <p class="text-lg leading-relaxed">
+                    As a Passionate cybersecurity professional with over 2 years of experience, I specialize in network security, penetration testing, and incident response. My career has been dedicated to protecting organizations from evolving cyber threats, ensuring robust security postures, and promoting a culture of security awareness. Driven by a commitment to ethical hacking and continuous learning, I aim to contribute to building resilient digital infrastructures in an ever-changing threat landscape.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Skills and Certifications -->
+    <section id="skills" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-blue-600">Core Skills and Certifications</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Skills</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Vulnerability Assessment</li>
+                        <li>Firewall Management</li>
+                        <li>Penetration Testing</li>
+                        <li>Incident Response</li>
+                        <li>SIEM Tool Configuration</li>
+                        <li>Cryptography and Encryption</li>
+                        <li>Network Security Protocols</li>
+                        <li>Risk Assessment</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-4">Certifications</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>CISSP (Certified Information Systems Security Professional)</li>
+                        <li>CEH (Certified Ethical Hacker)</li>
+                        <li>CompTIA Security+</li>
+                        <li>CISM (Certified Information Security Manager)</li>
+                        <li>OSCP (Offensive Security Certified Professional)</li>
+                        <li>ISC2 (Certified in Cybersecurity)</li>
+                        <li>TECHCRUSH Cybersecurity Bootcamp (Certificate of Completion)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Projects and Case Studies -->
+    <section id="projects" class="py-16 section-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-600">Key Projects and Case Studies</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/920b7e3f-1af2-43d2-8b11-b6ab6cfaf3fb.png" alt="Illustration of a secure network infrastructure with interconnected servers, firewalls, and security shields overlaying a digital cityscape symbolizing robust protection against cyber threats" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h3 class="text-xl font-semibold mb-2">Network Penetration Test for FinTech Company</h3>
+                    <p class="text-sm mb-2"><strong>Timeframe:</strong> 2022-2023</p>
+                    <p class="text-sm mb-2"><strong>Role:</strong> Lead Penetration Tester</p>
+                    <p class="text-sm mb-2"><strong>Tools:</strong> Metasploit, Wireshark, Burp Suite</p>
+                    <p class="mb-4">Conducted comprehensive penetration testing on a financial services network, identifying 15 critical vulnerabilities and simulating zero-day exploits.</p>
+                    <p class="text-sm"><strong>Outcome:</strong> Reduced potential breach risk by 80% through immediate remediation; presented findings to executive team, leading to budget allocation for enhanced security measures.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0e7f5afe-5b99-4a66-a3cd-d873922d4b31.png" alt="Conceptual image of an incident response dashboard displaying real-time alerts, threat maps, and recovery protocols with a calm command center atmosphere" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h3 class="text-xl font-semibold mb-2">Incident Response During Ransomware Attack</h3>
+                    <p class="text-sm mb-2"><strong>Timeframe:</strong> 2021</p>
+                    <p class="text-sm mb-2"><strong>Role:</strong> Incident Response Coordinator</p>
+                    <p class="text-sm mb-2"><strong>Tools:</strong> Splunk, CrowdStrike, Malwarebytes</p>
+                    <p class="mb-4">Managed response to a ransomware incident affecting 500+ endpoints, containing the threat within 4 hours.</p>
+                    <p class="text-sm"><strong>Outcome:</strong> Minimized downtime to under 2 hours; data recovery rate of 98%; post-incident audit improved compliance with NIST frameworks.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/deb49199-bd3b-420d-a626-55c176c20af7.png" alt="Visual representation of compliance audits with checkmarks, regulation icons, and secure documentation stacks in a modern boardroom setting" class="w-full h-48 object-cover rounded-md mb-4" />
+                    <h3 class="text-xl font-semibold mb-2">GDPR Compliance Assessment</h3>
+                    <p class="text-sm mb-2"><strong>Timeframe:</strong> 2020-2021</p>
+                    <p class="text-sm mb-2"><strong>Role:</strong> Security Consultant</p>
+                    <p class="text-sm mb-2"><strong>Tools:</strong> Vulnerability Scanners, Encryption Software</p>
+                    <p class="mb-4">Evaluated data protection practices for an e-commerce platform, addressing privacy concerns in user data handling.</p>
+                    <p class="text-sm"><strong>Outcome:</strong> Achieved 100% GDPR compliance; reduced data breach fines exposure by $500K through policy recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-600">Professional Experience</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Cybersecurity Intern</h3>
+                    <p class="text-sm text-gray-600">OJP TECHNOLOGIES LTD | JAN 2025 - Present</p>
+                    <ul class="list-disc pl-5 mt-4 space-y-1">
+                        <li>Implemented advanced threat detection systems, reducing incident response time by 40%.</li>
+                        <li>Trained staff on phishing awareness; decreased successful phishing attacks by 70%.</li>
+                        <li>Conducted risk assessments for 15+ clients, focusing on cloud security.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Cybersecurity Tutor</h3>
+                    <p class="text-sm text-gray-600">OJP TECHNOLOGIES LTD | APRIL 2025 - Present</p>
+                    <ul class="list-disc pl-5 mt-4 space-y-1">
+                        <li>Led a team of 5 in securing enterprise networks against DDoS attacks.</li>
+                        <li>Developed custom security scripts using Python and Bash, automating vulnerability scans.</li>
+                        <li>Collaborated with IT teams to integrate SIEM tools, enhancing monitoring capabilities.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Network Security Specialist</h3>
+                    <p class="text-sm text-gray-600">TechSecure LLC | 2016 - 2018</p>
+                    <ul class="list-disc pl-5 mt-4 space-y-1">
+                        <li>Performed penetration testing on client infrastructures, identifying and patching weaknesses.</li>
+                        <li>Designed and deployed firewall configurations for multi-site networks.</li>
+                        <li>Prepared security reports and presentations for non-technical stakeholders.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Cybersecurity Tutor</h3>
+                    <p class="text-sm text-gray-600">ICE HUB | SEPTEMBER 2025 - Present</p>
+                    <ul class="list-disc pl-5 mt-4 space-y-1">
+                        <li>Led a team of 5 in securing enterprise networks against DDoS attacks.</li>
+                        <li>Developed custom security scripts using Python and Bash, automating vulnerability scans.</li>
+                        <li>Collaborated with IT teams to integrate SIEM tools, enhancing monitoring capabilities.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold">Cybersecurity Tutor</h3>
+                    <p class="text-sm text-gray-600">OJP TECHNOLOGIES LTD | APRIL 2025 - Present</p>
+                    <ul class="list-disc pl-5 mt-4 space-y-1">
+                        <li>Led a team of 5 in securing enterprise networks against DDoS attacks.</li>
+                        <li>Developed custom security scripts using Python and Bash, automating vulnerability scans.</li>
+                        <li>Collaborated with IT teams to integrate SIEM tools, enhancing monitoring capabilities.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education and Training -->
+    <section id="education" class="py-16 section-bg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-blue-600">Education and Training</h2>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Diploma in Cybersecurity</h3>
+                <p class="text-sm text-gray-600">OJP Technologies LTD | 2024 - 2025</p>
+                <p class="mt-4"><strong>Relevant Courses:</strong> Ethical Hacking, Cryptography, Network Defense</p>
+                <h3 class="text-xl font-semibold mt-6">B.SC in Computer Science (IN-VIEW)</h3>
+                <p class="text-sm text-gray-600">State Nnamdi Azikiwe Universitty (UNIZIK) Awka | 2025 - Present</p>
+                <p class="mt-4"><strong>Ongoing Training:</strong> Regular participation in Black Hat, DEF CON, and Web Security Academy by Portswigger.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Sections -->
+    <section id="additional" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-600">Additional Information</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Publications and Blogs</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>"Advancing Zero-Trust Architectures" - Published in CyberSec Journal, 2023</li>
+                        <li>Personal Blog: Security Insights Blog (Ongoing), covering emergent threats and best practices</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Achievements and Volunteer Work</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Awarded "Cybersecurity Innovator of the Year" by Security Association, 2022</li>
+                        <li>Volunteer CTF Judge at local university hackathons</li>
+                        <li>Participant in annual Capture The Flag Competitions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section id="contact" class="py-16 section-bg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-12 text-blue-600">Get In Touch</h2>
+            <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto">
+                <p class="text-lg mb-6">Interested in collaborating or discussing cybersecurity opportunities? Reach out below.</p>
+                <div class="space-y-4">
+                    <p><strong>Email:</strong> doziedominion05@gmail.com</p>
+                    <p><strong>LinkedIn:</strong> <a href="#" class="text-blue-600 hover:underline">linkedin.com/in/alex-thompson-security</a></p>
+                    <p><strong>GitHub:</strong> <a href="#" class="text-blue-600 hover:underline">github.com/alex-security</a></p>
+                    <p><strong>Website/Blog:</strong> <a href="#" class="text-blue-600 hover:underline">alexthompsonsecurity.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Dozie Dominion. All rights reserved. Built with Dedication to Cybersecurity Excellence.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({
+                    behavior: 'smooth',
+                    top: target.offsetTop - 70
+                });
+                mobileMenu.classList.add('hidden'); // Close mobile menu
+            });
+        });
+
+        // Add subtle animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        });
+        document.querySelectorAll('.card-hover').forEach(card => observer.observe(card));
+    </script>
+</body>
+</html>
+</content>
+</create_file>
